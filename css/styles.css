@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family:calculatorfont ;
+    src:url(/fonts/calculator.ttf);
+}
+
+body {
+background: rgb(245, 172, 164);
+}
+
+.container{
+    font-family: calculatorfont;;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding: 15px;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 380px;
+    font-size: 2rem;
+    border: 1px solid gray;
+    background: #333;
+    border-radius: 10px;
+}
+
+.calculator-display{
+    padding: 25px 15px;
+    width: 95%;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align:right;
+    background: rgb(116, 113, 109);
+    border: 2px solid rgb(75, 172, 22);
+    overflow-x: auto;;
+    font-size: x-large;
+    color: rgb(67, 148, 45);
+    border-radius: 8PX;
+}
+.calculator-keypad{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: large;
+    display: flex;
+    width: 95%;
+}
+
+.keypad-numbers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: aliceblue;
+    font-size: large;
+}
+
+.keypad-button{
+    margin-top: 2px;
+    width: 25%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background: rgb(128, 127, 127);
+    border: 1px solid white;
+    font-size: large;
+    border-radius: 5px;
+}
+
+.keypad-button:hover{
+    filter:brightness(80%);
+    transition: filter .25s;
+}
+
+.keypad-button.celeste{
+    background-color: rgb(71, 135, 136);
+}
+
+.keypad-button.large{
+    width: 50%;
+}
+
+.keypad-button.large.red{
+    background: rgb(108, 69, 69);
+}
+
+.keypad-button.dark{
+    background-color: rgb(221, 205, 205);
+}
